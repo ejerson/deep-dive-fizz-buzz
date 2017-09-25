@@ -43,16 +43,18 @@ public class FizzBuzz {
     if (value % 5 == 0) {
       result += "buzz";
     }
-
-    // Turn String into an int value
-    if (result.isEmpty()) {
-//      result = Integer.toString(value);
-//      result = "" + value;
-//      result = String.format("%d", value);
-      result += value;
-
-    }
-    return result;
+//
+//    // Turn String into an int value
+//    if (result.isEmpty()) {
+////      result = Integer.toString(value);
+////      result = "" + value;
+////      result = String.format("%d", value);
+//      result += value;
+//
+//    }
+//    return result;
+//
+    return result.isEmpty() ? Integer.toString(value) : result;
 
   }
 
